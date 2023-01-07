@@ -1,0 +1,105 @@
+body {
+  /* background-color: rgb(79, 113, 61); */
+    color:rgb(0, 0, 0);
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    background-image: url('../IMAGES/landing-food.avif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    /* color: aliceblue; */
+    color: black;
+}
+
+.grid-home {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: black;
+    padding: 15px;
+    grid-gap: 15px;
+   
+}
+
+/* .grid-home div:hover {
+    border: 1px solid rgb(205, 50, 76);
+    color: black;
+} */
+.grid-home p {
+  
+    color: rgb(174, 127, 255);
+    font-size: 50px;
+    text-align: center;
+
+}
+.grid-home h3 {
+  
+  color: rgb(253, 253, 253);
+
+}
+
+.Home {
+    /* background-color: rgb(79, 113, 61); */
+    color:rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', sans-serif;
+
+    background-image: url('../IMAGES/landing-food.avif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    /* color: aliceblue; */
+    color: black;
+}
+
+.crear-recetas {
+  background-color: rgba(0, 0, 0, 0.533);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+a:visited { text-decoration: none; }
+
+.reload {
+  background-color: rgba(0, 0, 0, 0.533);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+.select {
+    padding: 10px;
+    background:#edf2ff;
+    border:none;
+}
+
+.loading {
+  font-size: 100px;
+  
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.grid-paginado {
+  position: relative;
+  top: 10px
+  
+ 
+}

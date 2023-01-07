@@ -1,0 +1,83 @@
+body {
+  /* background-color: rgb(79, 113, 61); */
+    color:rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-image: url('../IMAGES/landing-food.avif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    /* color: aliceblue; */
+    color: black;
+}
+
+.back-to-home {
+  
+    background-color: rgba(0, 0, 0, 0.533);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  
+}
+
+.cont1 {
+  background-color: rgba(0, 0, 0, 0.524);
+  
+  border-radius: 25px;
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  margin-bottom: 25px;
+  border: 5px solid;
+}
+
+img {
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.cont2 {
+  background-color: rgba(0, 0, 0, 0.524);
+  
+  border-radius: 25px;
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  
+  border: 5px solid;
+  margin-bottom: 25px;
+}
+
+.cont3 {
+  background-color: rgba(0, 0, 0, 0.524);
+  
+  border-radius: 25px;
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  
+  border: 5px solid;
+  margin-bottom: 25px;
+}
+
+h1, h3 {
+  color: bisque;
+}
+
+.delete {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  font-size: 25px;
+  border-radius: 25px;
+  padding: 15px 32px;
+  margin: 10px;
+  cursor: pointer;
+ 
+}

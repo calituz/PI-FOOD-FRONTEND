@@ -1,0 +1,113 @@
+.recipes-create {
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('../IMAGES/landing-food.avif');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  color: rgb(0, 0, 0);
+}
+
+span {
+  background-color: rgb(225, 17, 17);
+  text-align: left
+}
+
+.backtohomepage {
+
+  background-color: rgba(0, 0, 0, 0.533);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+
+.recipes-create h1 {
+  background-color: rgba(255, 255, 255, 0.669);
+  border-radius: 25px;
+
+  display: table;
+  margin: 50px auto 50px auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.input,
+textarea {
+  width: 85%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  
+}
+
+label {
+ 
+  padding: 12px 20px;
+ 
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 75%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container123 {
+  border-radius: 25px;
+  background-color: #0000008e;
+  padding: 50px;
+  width: 40%;
+  margin: auto;
+  color: bisque;
+
+}
+
+.container123 label {
+  font-size: 20px;
+ 
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  color: black;
+  padding: 15px;
+  grid-gap: 15px;
+  color: bisque;
+ 
+
+}
+
+.title {
+  color: rgb(0, 0, 0);
+}
+

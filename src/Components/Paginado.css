@@ -1,0 +1,63 @@
+/* ul#navlist {
+    margin-left: 0;
+    padding-left: 0;
+    white-space: nowrap;
+}
+
+#navlist li {
+    display: inline;
+    list-style-type: none;
+}
+
+#navlist a {
+    padding: 3px 10px;
+}
+
+
+
+#navlist a:hover {
+
+    background-color: rgb(53, 203, 150);
+    border-radius: 25px;
+}
+
+#navcontainer {
+    background-color: rgb(255, 234, 0);
+    border: 2px solid rgb(198, 60, 29);
+    padding: 10px;
+    background-size: auto;
+    border-radius: 25px;
+}
+
+.number#current:focus {
+    background: yellow;
+    color: red;
+}
+a#current:focus {
+    background: yellow;
+    color: red;
+} */
+
+.number {
+    background-color: rgba(0, 0, 0, 0.524);
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+
+.number:focus {
+    background-color: rgb(0, 0, 0);
+    width: 80px;
+    
+
+}
+
+.number:hover:not(:disabled) {
+    filter: brightness(2);
+    -webkit-filter: brightness(2);
+}
+
