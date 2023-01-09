@@ -178,7 +178,7 @@ export default function RecipesCreate() {
 
 
 
-                    <button className="input" type="submit" id="button" disabled={disable}>CREAR RECETA</button>
+                    <button className="input" type="submit" id="button" disabled={disable}>qwerty</button>
 
                 </form>
             </div>
