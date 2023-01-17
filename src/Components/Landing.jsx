@@ -11,7 +11,7 @@ const Landing = (props) => {
                     <div className="rectangulo">
                         <h1 className="h1">FOOD API</h1>
                         <Link to="/home">
-                            <button className="button">ENTER</button>
+                            <button className="button">sarasa</button>
                         </Link>
                     </div>
                 </div>
