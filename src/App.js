@@ -5,9 +5,9 @@ import RecipesCreate from './Components/RecipesCreate';
 import Details from './Components/Details';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Login from './components/login';
-import Logout from './components/logout';
-import Profile from './components/profile';
+import Login from './Components/login';
+import Logout from './Components/logout';
+import Profile from './Components/profile';
 
 import { useAuth0 } from '@auth0/auth0-react'
 
@@ -27,7 +27,7 @@ function App() {
         isAuthenticated ? <Logout /> : <Login />
       }
       <Profile />
-      
+
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route path="/home" component={Home} />
