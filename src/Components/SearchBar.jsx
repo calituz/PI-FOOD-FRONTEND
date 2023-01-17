@@ -1,13 +1,22 @@
 import React from "react";
-import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { getRecipeName } from "../Redux/actions";
+import { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getRecipeName, itemCart } from "../Redux/actions";
+
 
 import "./SearchBar.css"
 
+//const cartItemsFromLocalStorage = JSON.parse(localStorage.getItem("cartItems") || "[]")
+
 export default function SearchBar () {
+    
     const dispatch = useDispatch()
     const [name, setName] = useState("")
+
+    const items = useSelector((state) => state.items)
+    const [item, setItem] = useState("")
+    useEffect(() => { localStorage.setItem("cartItems", JSON.stringify(items)) }, [items]);
+    
 
     const handleInputChange = (e) => {
         e.preventDefault()
@@ -17,6 +26,8 @@ export default function SearchBar () {
     const handleSubmit = (e) => {
         e.preventDefault()
         dispatch(getRecipeName(name))
+        dispatch(itemCart(name))
+        
     }
 
     return (

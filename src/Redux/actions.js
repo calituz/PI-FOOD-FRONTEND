@@ -10,6 +10,7 @@ export const GET_DIETS = "GET_DIETS"
 export const GET_DETAILS = "GET_DETAILS"
 export const MAYOR50 = "MAYOR50"
 export const DELETE = "DELETE"
+export const ITEM_CART = "ITEM_CART"
 
 export const getAllRecipes = () => {
     return function (dispatch) {
@@ -112,5 +113,12 @@ export const deleteRecipe = (id) => {
         } catch (error) {
             console.log(error)
         }
+    }
+}
+
+export const itemCart = (item) => {
+    return {
+        type: ITEM_CART,
+        payload: item
     }
 }

@@ -5,11 +5,29 @@ import RecipesCreate from './Components/RecipesCreate';
 import Details from './Components/Details';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+import Login from './components/login';
+import Logout from './components/logout';
+import Profile from './components/profile';
+
+import { useAuth0 } from '@auth0/auth0-react'
+
 
 function App() {
+
+  const { isAuthenticated, isLoading } = useAuth0()
+
+  if (isLoading) return <h1>Loading Login...</h1>
+
   return (
     <BrowserRouter>
       <div className="App">
+
+        <h1>auth0</h1>
+      {
+        isAuthenticated ? <Logout /> : <Login />
+      }
+      <Profile />
+      
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route path="/home" component={Home} />

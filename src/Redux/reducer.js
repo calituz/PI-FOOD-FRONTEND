@@ -8,13 +8,16 @@ import { GET_DIETS } from "./actions";
 import { GET_DETAILS } from "./actions";
 import { MAYOR50 } from "./actions";
 import { DELETE } from "./actions";
+import { ITEM_CART } from "./actions";
+
+const cartItemsFromLocalStorage = JSON.parse(localStorage.getItem("cartItems") || "[]")
 
 const initialState = {
     recipes: [],
     allRecipes: [], //necesario para los filtros (inmutable)
     diets: [],
     details: [],
-
+    items: cartItemsFromLocalStorage || []
 }
 
 const rootReducer = (state = initialState, action) => {
@@ -159,6 +162,12 @@ const rootReducer = (state = initialState, action) => {
         case "DELETE":
             return {
                 ...state,
+            }
+
+        case ITEM_CART:
+            return {
+                ...state,
+                items: [...state.items, action.payload]
             }
 
         default:
